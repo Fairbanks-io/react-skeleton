@@ -8,6 +8,9 @@ import SignIn from './views/SignIn'
 import Register from './views/Register'
 import Admin from './views/Admin'
 import Dashboard from './views/Dashboard'
+import SampleBlog from './views/samples/blog/blog'
+import SampleCheckout from './views/samples/checkout/Checkout'
+import SamplePricing from './views/samples/pricing/pricing'
 
 const styles = theme => ({
   root: {
@@ -48,6 +51,21 @@ class Skeleton extends React.Component {
               exact
               path="/dashboard"
               render={routeProps => <Dashboard {...routeProps} />}
+            />
+            <Route
+              exact
+              path="/samples/blog"
+              render={routeProps => <SampleBlog {...routeProps} />}
+            />
+            <Route
+              exact
+              path="/samples/checkout"
+              render={routeProps => <SampleCheckout {...routeProps} />}
+            />
+            <Route
+              exact
+              path="/samples/pricing"
+              render={routeProps => <SamplePricing {...routeProps} />}
             />
           </Switch>
         </div>

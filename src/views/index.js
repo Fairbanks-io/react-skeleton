@@ -122,19 +122,19 @@ class Home extends React.Component {
             {/* End hero unit */}
             <Grid container spacing={40}>
               <Grid item sm={6} md={4} lg={4}>
-                <h3>Sample Pages</h3>
+                <h3>Page Templates</h3>
                 <List component="nav">
-                  <ListItem button component="a" href="/page/first">
+                  <ListItem button component="a" href="/samples/blog">
                     <i className="fas fa-xs fa-minus" />
-                    <ListItemText primary="Sample Page 1" />
+                    <ListItemText primary="Blog with Markdown support" />
                   </ListItem>
-                  <ListItem button component="a" href="/page/second">
+                  <ListItem button component="a" href="/samples/checkout">
                     <i className="fas fa-xs fa-minus" />
-                    <ListItemText primary="Sample Page 2" />
+                    <ListItemText primary="Self-hosted Checkout" />
                   </ListItem>
-                  <ListItem button component="a" href="/page/third">
+                  <ListItem button component="a" href="/samples/pricing">
                     <i className="fas fa-xs fa-minus" />
-                    <ListItemText primary="Sample Page 3" />
+                    <ListItemText primary="Sample Pricing Table" />
                   </ListItem>
                 </List>
               </Grid>
